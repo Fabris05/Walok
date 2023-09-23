@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* HEADER */
+header{
+    position: sticky;
+    top: 0px;
+}
+nav{
+    background: #121212;
+    height: 80px;
+    width: 100%;
+
+}
+.enlace{
+    position: absolute;
+    padding: 20px 100px;
+}
+.logo{
+    height: 45px;
+}
+nav ul{
+    float: right;
+    margin-right: 100px;
+
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    padding: 0 12px;
+    margin: 0 5px;
+
+}
+nav ul li a{
+    color: #fff;
+    font-size: 18px;
+    padding: 7px 15px;
+    border-radius: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+li a.active, li a:hover{
+    background: #E50E3A;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 40px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+/* BODY */
+body{
+    background-color: #222222;
+}
+
+/* FOOTER */
+.footer{
+    width: 100%;
+    background-color: #121212;
+}
+.footer .g1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+.footer .g1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .g1 .box figure img{
+    width: 180px;
+}
+.footer .g1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+}
+.footer .g1 .box {
+    text-align: center;
+}
+.footer .g1 .box .info{
+    color: #fff;
+}
+.footer .g1 .box .info:hover{
+    color: #E50E3A;
+}
+.footer .g1 .box .social a{
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+    width: 55px;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 40px;
+    padding-left: 32px;
+    /* text-align: center;
+    justify-content: center; */
+    transition: all 300ms ease;
+}
+.footer .g1 .box .social a:hover{
+    color: #E50E3A;
+}
+.footer .g2{
+    background-color: #E50E3A;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+}
+.footer .g2 small{
+    font-size: 15px;
+}
+/*Cuerpo - Inicio*/
+.content{
+    padding: 4px;
+    margin: 10px;
+}
+.title-letter{
+    margin: 5px;
+    padding: 8px;
+    text-align: center;
+}
+.title{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.container-menus{
+    margin: 15px;
+    padding: 15px;
+}
+.menus{
+    margin: 5px;
+    padding: 5px;
+}
+.title-menu{
+    margin: 3px;
+    margin-bottom: 15px;
+    padding: 8px;
+    text-align: center;
+}
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-style: italic;
+    color: orange;
+}
+.info-menu{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding: 15px;
+    margin: 3px;
+}
+.right-platillo, .left-platillo{
+    width: auto;
+    height: auto;
+    margin: 10px;
+    padding: 15px;
+}
+.list{
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 10px;
+}
+.list dt::before{
+    content: "•";
+}
+dt{
+    margin-top: 5px;
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: yellow;
+}
+dd{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding-left: 28px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+.price{
+    float: right;
+}
+@media (min-width:768px) and (max-width:1023px){
+    .title-menu{
+        margin: 3px;
+        margin-bottom: 10px;
+        padding: 5px;
+        text-align: center;
+    }
+    h2{
+        font-size: 30px;
+    }
+    .info-menu{
+        display: block;
+        gap: 20px;
+        padding: 10px;
+        margin: 2px;
+    }
+    dt{
+        font-size: 16px;
+    }
+    dd{
+        font-size: 13;
+    }
+    .right-platillo, .left-platillo{
+        margin: 5px;
+        padding: 0px;
+    }
+}
+@media (max-width:767px){
+    .title-menu{
+        margin: 3px;
+        margin-bottom: 10px;
+        padding: 5px;
+        text-align: center;
+    }
+    h2{
+        font-size: 30px;
+    }
+    .info-menu{
+        display: block;
+        gap: 10px;
+        padding: 8px;
+        margin: 2px;
+    }
+    dt{
+        font-size: 14px;
+    }
+    dd{
+        font-size: 12px;
+    }
+    .right-platillo, .left-platillo{
+        margin: 5px;
+        padding: 0px;
+    }
+}
+/*Cuerpo - Fin*/
+/*header-footer*/
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #121212;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: #E50E3A;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+    .footer .g1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
