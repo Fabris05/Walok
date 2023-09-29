@@ -166,9 +166,10 @@ h2{
     font-size: 40px;
     font-style: italic;
     color: orange;
+    cursor: pointer;
 }
 .info-menu{
-    display: flex;
+    display:none;
     justify-content: center;
     gap: 100px;
     padding: 15px;
@@ -204,7 +205,7 @@ dd{
 .price{
     float: right;
 }
-@media (min-width:768px) and (max-width:1023px){
+@media (max-width:768px){
     .title-menu{
         margin: 3px;
         margin-bottom: 10px;
@@ -212,10 +213,10 @@ dd{
         text-align: center;
     }
     h2{
-        font-size: 30px;
+        font-size: 25px;
     }
     .info-menu{
-        display: block;
+        display: none;
         gap: 20px;
         padding: 10px;
         margin: 2px;
@@ -225,33 +226,6 @@ dd{
     }
     dd{
         font-size: 13;
-    }
-    .right-platillo, .left-platillo{
-        margin: 5px;
-        padding: 0px;
-    }
-}
-@media (max-width:767px){
-    .title-menu{
-        margin: 3px;
-        margin-bottom: 10px;
-        padding: 5px;
-        text-align: center;
-    }
-    h2{
-        font-size: 30px;
-    }
-    .info-menu{
-        display: block;
-        gap: 10px;
-        padding: 8px;
-        margin: 2px;
-    }
-    dt{
-        font-size: 14px;
-    }
-    dd{
-        font-size: 12px;
     }
     .right-platillo, .left-platillo{
         margin: 5px;
