@@ -141,12 +141,14 @@ body{
     margin: 5px;
     padding: 8px;
     text-align: center;
+    /*border: 2px solid red;*/
 }
 .title{
     color: white;
     font-size: 60px;
     font-weight: bold;
     text-decoration: underline;
+    /*border: 2px solid red;*/
 }
 .container-menus{
     margin: 15px;
@@ -162,11 +164,19 @@ body{
     padding: 8px;
     text-align: center;
 }
-h2{
+.title-menu-platillo{
+    display: inline-block;
     font-size: 40px;
+    padding: 5px 20px 5px 20px;
     font-style: italic;
-    color: orange;
+    color: white;
     cursor: pointer;
+    /*border: 2px solid red;*/
+}
+.title-menu-platillo:hover{
+    border-radius: 25% 10%;
+    background: #E50E3A;
+    transition: .5s;
 }
 .info-menu{
     display:none;
@@ -174,6 +184,8 @@ h2{
     gap: 100px;
     padding: 15px;
     margin: 3px;
+    background-color: #E50E3A;
+    border-radius: 50px 0;
 }
 .right-platillo, .left-platillo{
     width: auto;
@@ -193,14 +205,15 @@ dt{
     margin-top: 5px;
     margin-bottom: 8px;
     font-size: 20px;
-    color: yellow;
+    color: white;
 }
 dd{
     margin-top: 10px;
     margin-bottom: 30px;
     padding-left: 28px;
     font-size: 16px;
-    color: white;
+    color: black;
+    font-weight: bold;
 }
 .price{
     float: right;
@@ -212,8 +225,13 @@ dd{
         padding: 5px;
         text-align: center;
     }
-    h2{
+    .title-menu-platillo{
         font-size: 25px;
+    }
+    .title-menu-platillo:hover{
+        background: #E50E3A;
+        transition: 0.10ms;
+        border-radius: 30px 0;
     }
     .info-menu{
         display: none;
