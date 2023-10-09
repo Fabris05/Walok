@@ -6,6 +6,7 @@ const sedeMiInfo = document.querySelector('.contact-wrap2');
 
 sedeBaButton.style.background='rgb(229, 14, 58)';
 sedeMiButton.style.background='rgb(34, 34, 34)';
+sedeMiInfo.style.display = 'none';
 
 sedeBaButton.addEventListener('click', function () {
     sedeBaButton.style.transition='.5s';
