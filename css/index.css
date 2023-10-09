@@ -95,7 +95,6 @@ li a.active, li a:hover{
     margin-top: -1px;
 }
 .index-header, .index-header2, .index-header3{
-    display: flex;
     flex-direction: column;
     background-position: center;
     background-repeat: no-repeat;
@@ -106,13 +105,16 @@ li a.active, li a:hover{
     transition: opacity 0.9s ease-in-out;
 }
 .index-header{
+    display: flex;
     background-image: linear-gradient(to right, rgb(0 0 0 / .5),rgb(0 0 0 / .5)), url('../img/wallpaper-dimsum.jpg');
 }
 .index-header2{
+    display: none;
     background-image: linear-gradient(to right, rgb(0 0 0 / .5),rgb(0 0 0 / .5)), url('../img/index2.jpeg');
 }
 
 .index-header3{
+    display: none;
     background-image: linear-gradient(to right, rgb(0 0 0 / .5),rgb(0 0 0 / .5)), url('../img/index.3.jpeg');
 }
 
