@@ -1,3 +1,37 @@
+// botones de sede
+const sedeBaButton = document.querySelector('.bt-ba');
+const sedeMiButton = document.querySelector('.bt-mi');
+const sedeBaInfo = document.querySelector('.contact-wrap');
+const sedeMiInfo = document.querySelector('.contact-wrap2');
+
+sedeBaButton.style.background='rgb(229, 14, 58)';
+sedeMiButton.style.background='rgb(34, 34, 34)';
+
+sedeBaButton.addEventListener('click', function () {
+    sedeBaButton.style.transition='.5s';
+    sedeBaButton.style.background='rgb(229, 14, 58)';
+    sedeMiButton.style.background='rgb(34, 34, 34)';
+    sedeMiInfo.style.display = 'none';
+
+    if (sedeBaInfo.style.display === 'none') {
+        sedeBaInfo.style.display = 'flex';
+    }
+});
+
+
+sedeMiButton.addEventListener('click', function () {
+    sedeMiButton.style.transition='.5s';
+    sedeMiButton.style.background='rgb(229, 14, 58)';
+    sedeBaButton.style.background='rgb(34, 34, 34)';
+    sedeBaInfo.style.display = 'none';
+
+    if (sedeMiInfo.style.display === 'flex') {
+        sedeMiInfo.style.display = 'flex';
+    } else {
+        sedeMiInfo.style.display = 'flex';
+    }
+});
+
 //Info
 const testimonials = [
     {
