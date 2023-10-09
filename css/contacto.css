@@ -49,6 +49,31 @@ li a.active, li a:hover{
     background: #E50E3A;
     transition: .5s;
 }
+
+.button-login{
+    border: 2px solid rgb(34, 34, 34);
+    padding: 4px 10px;
+}
+
+.button-login:hover{
+    background-color: black;
+}
+
+.button-register{
+    border: 2px solid rgb(34, 34, 34);
+    padding: 5px;
+    background-color: rgb(152, 9, 38);
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 2px;
+}
+
+.button-register:hover{
+    border-color: rgb(229, 14, 58);
+    background-color: rgb(34, 34, 34);
+    transition: .5s;
+}
+
 .checkbtn{
     font-size: 40px;
     color: #fff;
