@@ -9,12 +9,13 @@
 /* HEADER */
 header{
     position: sticky;
-    top: 0px;
+    top: -1px;
 }
 nav{
     background: #121212;
     height: 80px;
     width: 100%;
+    overflow: hidden;
 
 }
 .enlace{
@@ -26,14 +27,14 @@ nav{
 }
 nav ul{
     float: right;
-    margin-right: 100px;
+    margin-right: 25px;
 
 }
 nav ul li{
     display: inline-block;
     line-height: 80px;
     padding: 0 12px;
-    margin: 0 5px;
+    margin: 0 3px;
 
 }
 nav ul li a{
@@ -73,7 +74,6 @@ li a.active, li a:hover{
     background-color: rgb(34, 34, 34);
     transition: .5s;
 }
-
 .checkbtn{
     font-size: 40px;
     color: #fff;
@@ -94,8 +94,34 @@ body{
     align-items: center;
     background-color: #222222;
 }
+.buttons{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    align-items: center;
+    justify-content: center;
+    .bt-ba, .bt-mi{
+        text-decoration: none;
+        margin-right: 30px;
+        font-size: 20px;
+        cursor: pointer;
+        color: white;
+        background-color: #E50E3A;
+        border-radius: 8px;
+        padding: 2px 8px;
+    }
+}
 /* Map and visit */
 .contact-wrap{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact-wrap2{
     padding-top: 50px;
     padding-bottom: 50px;
     width: 80%;
@@ -324,6 +350,18 @@ body{
     }
     #check:checked ~ ul{
         left:0;
+    }
+    .buttons{
+        .bt-ba, .bt-mi{
+            text-decoration: none;
+            margin-right: 8px;
+            font-size: 15px;
+            cursor: pointer;
+            color: white;
+            background-color: #E50E3A;
+            border-radius: 8px;
+            padding: 2px 8px;
+        }
     }
     .footer .g1{
         width: 90%;
