@@ -159,8 +159,11 @@ body{
 }
 /*Cuerpo - Inicio*/
 .content{
+    display: flex;
+    flex-direction: column;
     padding: 4px;
     margin: 10px;
+    justify-content: center;
 }
 .title-letter{
     margin: 5px;
@@ -169,11 +172,19 @@ body{
     /*border: 2px solid red;*/
 }
 .title{
+    display: flex;
+    justify-content: center;
+    width: 100%;
     color: white;
-    font-size: 60px;
+    font-size: 45px;
     font-weight: bold;
-    text-decoration: underline;
-    /*border: 2px solid red;*/
+    text-decoration: none;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, rgb(0 0 0 / .5),rgb(0 0 0 / .5)), url('../img/carta.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
 }
 .container-menus{
     margin: 15px;
