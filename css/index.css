@@ -106,16 +106,16 @@ li a.active, li a:hover{
 }
 .index-header{
     display: flex;
-    background-image: linear-gradient(to right, rgb(0 0 0 / .5),rgb(0 0 0 / .5)), url('../img/wallpaper-dimsum.jpg');
+    background-image: linear-gradient(to right, rgb(0 0 0 / .5),rgb(0 0 0 / .5)), url('../img/index-1.webp');
 }
 .index-header2{
     display: none;
-    background-image: linear-gradient(to right, rgb(0 0 0 / .5),rgb(0 0 0 / .5)), url('../img/index2.jpeg');
+    background-image: linear-gradient(to right, rgb(0 0 0 / .5),rgb(0 0 0 / .5)), url('../img/index2.webp');
 }
 
 .index-header3{
     display: none;
-    background-image: linear-gradient(to right, rgb(0 0 0 / .5),rgb(0 0 0 / .5)), url('../img/index.3.jpeg');
+    background-image: linear-gradient(to right, rgb(0 0 0 / .5),rgb(0 0 0 / .5)), url('../img/index.3.webp');
 }
 
 
@@ -305,20 +305,20 @@ p{
     .index-header{
         align-items: center;
         padding: 0px;
-        background-image: linear-gradient(to right, rgb(0 0 0 / .7),rgb(0 0 0 / .7)), url('../img/wallpaper-dimsum.jpg');
+        background-image: linear-gradient(to right, rgb(0 0 0 / .7),rgb(0 0 0 / .7)), url('../img/index-1.webp');
         justify-content: center;
     }
 
     .index-header2{
         align-items: center;
         padding: 0px;
-        background-image: linear-gradient(to right, rgb(0 0 0 / .5),rgb(0 0 0 / .5)), url('../img/index2.jpeg');
+        background-image: linear-gradient(to right, rgb(0 0 0 / .7),rgb(0 0 0 / .7)), url('../img/index2.webp');
         justify-content: center;
     }
     .index-header3{
         align-items: center;
         padding: 0px;
-        background-image: linear-gradient(to right, rgb(0 0 0 / .5),rgb(0 0 0 / .5)), url('../img/index.3.jpeg');
+        background-image: linear-gradient(to right, rgb(0 0 0 / .7),rgb(0 0 0 / .7)), url('../img/index.3.webp');
         justify-content: center;
     }
     .index-font{
@@ -326,7 +326,7 @@ p{
         width: 100%;
     }
     h1{
-        font-size: 40px;  
+        font-size: 35px;  
         color:white;
         margin-bottom: 0px;
     
