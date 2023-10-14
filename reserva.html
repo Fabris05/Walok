@@ -24,7 +24,7 @@
                 <li><a href="contacto.html">Contacto</a></li>
                 <li><a href="reserva.html">Reserva</a></li>
                 <li><a href="#" class="button-login">Iniciar Sesión</a></li>
-                <li><a href="#"class="button-register" >Registrarme</a></li>
+                <li><a href="#"class="button-register">Registrarme</a></li>
             </ul>
         </nav>
     </header>
@@ -41,17 +41,17 @@
                         <div class="content">
                             <div class="input-text">
                                 <label for="FormName">Ingrese su nombre</label>
-                                <input type="text" class="formname" id="FormName" name="FormName">
+                                <input type="text" class="formname" id="FormName" name="FormName" oninput="validarLetras(event)">
                             </div>
             
                             <div class="input-text">
                                 <label for="FormDNI">Ingrese su DNI</label>
-                                <input type="text" class="formdni" id="FormDNI" name="FormDNI">
+                                <input type="text" class="formdni" id="FormDNI" name="FormDNI" oninput="validarNumeros(event)">
                             </div>
             
                             <div class="input-text">
                                 <label for="FormEmail">Ingrese su correo electrónico</label>
-                                <input type="text" class="input-a" id="FormEmail" name="FormEmail">
+                                <input type="text" class="input-a" id="FormEmail" name="FormEmail" oninput="validarEmail(event)">
                             </div>
             
                             <div class="input-text">
@@ -66,7 +66,7 @@
             
                             <div class="input-text">
                                 <label for="FormEmail">Ingrese su celular</label>
-                                <input type="text" class="input-b" id="FormCell" name="FormCell">
+                                <input type="text" class="input-b" id="FormCell" name="FormCell" oninput="validarNumeros(event)">
                             </div>
                             
                             <div class="input-text">
@@ -116,7 +116,7 @@
             <div class="box">
                 <figure>
                     <a href="reclamaciones.html">
-                        <img src="img/libro-de-reclamaciones.png" alt="libro-de-reclamaciones">
+                        <img src="/img/libro-de-reclamaciones.png" alt="libro-de-reclamaciones">
                     </a>
                 </figure>
             </div>
@@ -130,5 +130,6 @@
             <small>&copy; 2023 <b>Wa Lok</b> - Todos los derechos reservados.</small>
         </div>
     </footer>
+    <script src="js/validacion.js"></script>
 </body>
 </html>
