@@ -19,7 +19,6 @@ sedeBaButton.addEventListener('click', function () {
     }
 });
 
-
 sedeMiButton.addEventListener('click', function () {
     sedeMiButton.style.transition='.5s';
     sedeMiButton.style.background='rgb(229, 14, 58)';

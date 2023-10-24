@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap');
+.footer{
+    width: 100%;
+    background-color: #121212;
+}
+.footer .g1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+.footer .g1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .g1 .box figure img{
+    width: 180px;
+}
+.footer .g1 .box h2{
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+}
+.footer .g1 .box {
+    text-align: center;
+}
+.footer .g1 .box .info{
+    color: #fff;
+}
+.footer .g1 .box .info:hover{
+    color: #E50E3A;
+}
+.footer .g1 .box .social a{
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+    width: 55px;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 40px;
+    padding-left: 32px;
+    /* text-align: center;
+    justify-content: center; */
+    transition: all 300ms ease;
+}
+.footer .g1 .box .social a:hover{
+    color: #E50E3A;
+}
+.footer .g2{
+    background-color: #E50E3A;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+}
+.footer .g2 small{
+    font-size: 15px;
+}

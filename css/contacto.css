@@ -6,86 +6,6 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-/* HEADER */
-header{
-    position: sticky;
-    top: -1px;
-}
-nav{
-    background: #121212;
-    height: 80px;
-    width: 100%;
-    overflow: hidden;
-
-}
-.enlace{
-    position: absolute;
-    padding: 20px 100px;
-}
-.logo{
-    height: 45px;
-}
-nav ul{
-    float: right;
-    margin-right: 25px;
-
-}
-nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    padding: 0 12px;
-    margin: 0 3px;
-
-}
-nav ul li a{
-    color: #fff;
-    font-size: 18px;
-    padding: 7px 15px;
-    border-radius: 18px;
-    text-transform: uppercase;
-    text-decoration: none;
-
-}
-li a.active, li a:hover{
-    background: #E50E3A;
-    transition: .5s;
-}
-
-.button-login{
-    border: 2px solid rgb(34, 34, 34);
-    padding: 4px 10px;
-}
-
-.button-login:hover{
-    background-color: black;
-}
-
-.button-register{
-    border: 2px solid rgb(34, 34, 34);
-    padding: 5px;
-    background-color: rgb(152, 9, 38);
-    border-radius: 10px;
-    cursor: pointer;
-    margin-left: 2px;
-}
-
-.button-register:hover{
-    border-color: rgb(229, 14, 58);
-    background-color: rgb(34, 34, 34);
-    transition: .5s;
-}
-.checkbtn{
-    font-size: 40px;
-    color: #fff;
-    float: right;
-    line-height: 80px;
-    margin-right: 20px;
-    cursor: pointer;
-    display: none;
-}
-#check{
-    display: none;
-}
 
 /* BODY */
 body{
@@ -272,6 +192,7 @@ body{
     width: 180px;
 }
 .footer .g1 .box h2{
+    font-weight:bold;
     color: #fff;
     margin-bottom: 25px;
     font-size: 20px;

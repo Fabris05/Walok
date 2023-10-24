@@ -6,96 +6,21 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-/* HEADER */
-header{
-    position: sticky;
-    top: -1px;
-}
-nav{
-    background: #121212;
-    height: 80px;
-    width: 100%;
-    overflow: hidden;
 
-}
-.enlace{
-    position: absolute;
-    padding: 20px 100px;
-}
-.logo{
-    height: 45px;
-}
-nav ul{
-    float: right;
-    margin-right: 25px;
-
-}
-nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    padding: 0 12px;
-    margin: 0 3px;
-
-}
-nav ul li a{
-    color: #fff;
-    font-size: 18px;
-    padding: 7px 15px;
-    border-radius: 18px;
-    text-transform: uppercase;
-    text-decoration: none;
-
-}
-li a.active, li a:hover{
-    background: #E50E3A;
-    transition: .5s;
-}
-
-.button-login{
-    border: 2px solid rgb(34, 34, 34);
-    padding: 4px 10px;
-}
-
-.button-login:hover{
-    background-color: black;
-}
-
-.button-register{
-    border: 2px solid rgb(34, 34, 34);
-    padding: 5px;
-    background-color: rgb(152, 9, 38);
-    border-radius: 10px;
-    cursor: pointer;
-    margin-left: 2px;
-}
-
-.button-register:hover{
-    border-color: rgb(229, 14, 58);
-    background-color: rgb(34, 34, 34);
-    transition: .5s;
-}
-.checkbtn{
-    font-size: 40px;
-    color: #fff;
-    float: right;
-    line-height: 80px;
-    margin-right: 20px;
-    cursor: pointer;
-    display: none;
-}
-#check{
-    display: none;
-}
+/* Cuerpo */
 
 .body-container{
     display: flex;
     background-color: rgb(34, 34, 34);
     flex-direction: column;
 }
+div .container{
+    flex-direction: column;
+}
 .container{
     display: flex;
-    flex-direction: column;
-    padding: 50px;
+    /* flex-direction: column; */
+    padding: 20px;
     line-height: 20px;
 }
 .first{
@@ -112,6 +37,7 @@ h1{
     background-color: #E50E3A;
 
 }
+
 p{
     color: white;
     line-height: 30px;
@@ -159,7 +85,7 @@ h2{
     text-align: left;
     color: rgb(229, 14, 58);
     padding-bottom: 8px;
-    border-bottom: 2px solid gray;
+    border-bottom: none;
 
 }
 
@@ -329,7 +255,6 @@ a{
     nav ul li a{
         font-size: 16px;
     }
-
 }
 /* Formulario Responsive */
 @media(max-width: 630px){
