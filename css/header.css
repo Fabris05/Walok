@@ -12,82 +12,82 @@ nav {
     position: sticky;
     top: -1px;
 }
-.enlace {
-    padding: 20px 0;
-    display: flex;
-    align-items: center;
-}
 
-.logo {
-    height: 45px;
-    margin-right: 10px;
+.enlace{
+    position: absolute;
+    padding: 20px 100px;
 }
-nav ul {
+.logo{
+    height: 45px;
+}
+nav ul{
     float: right;
     margin-right: 25px;
-}
 
-nav ul li {
+}
+nav ul li{
     display: inline-block;
     line-height: 80px;
     padding: 0 12px;
     margin: 0 3px;
+
+}
+button .btn-outline-dark{
+    display: flex;
+    margin-top: 200px;
+
 }
 
-nav ul li a {
-    color: #fff !important;
+nav ul li.nav-item1{
+    display: inline-block;
+    line-height: 80px;
+    padding: 0 12px;
+    margin: 0 3px;
+
+}
+nav ul li a.nav-link{
+    color: rgb(255, 255, 255);
     font-size: 18px;
     padding: 7px 15px;
     border-radius: 18px;
     text-transform: uppercase;
     text-decoration: none;
+
 }
-a:not([href]):not([tabindex]) {
-    color: inherit;
+
+nav ul li.nav-item1 a.nav-link1{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    padding: 7px 15px;
+    border-radius: 18px;
+    text-transform: uppercase;
     text-decoration: none;
-    cursor: pointer;
-    font-weight: bold;
+
 }
-nav ul li a.active, nav ul li a:hover {
-    color: #E50E3A !important;
+
+nav ul li a.nav-link.active, li a.nav-link:hover{
+    color: rgb(229,14,58);
     transition: .5s;
-}
-
-.button-login {
-    border: 2px solid rgb(34, 34, 34);
-    padding: 4px 10px;
-}
-
-.button-login:hover {
-    background-color: red;
-}
-
-.button-register {
-    padding: 5px;
-    border-radius: 10px;
     cursor: pointer;
-    margin-left: 2px;
 }
 
-.button-register:hover {
-    border-color: rgb(229, 14, 58);
-    background-color: rgb(34, 34, 34);
+nav ul li.nav-item1 a.nav-link1.active, li a.nav-link1:hover{
+    background: rgb(229,14,58);
+    color: rgb(229,14,58);
     transition: .5s;
-}
-
-.checkbtn {
-    font-size: 40px;
-    color: #fff;
-    float: right;
-    line-height: 80px;
-    margin-right: 20px;
     cursor: pointer;
-    display: none;
 }
 
+.botones{
+    display: flex;
+}
 #check {
     display: none;
 }
+.checkbtn{
+    display: none;
+}
+
 
 /*responsive*/
 @media (max-width: 952px){
@@ -100,7 +100,9 @@ nav ul li a.active, nav ul li a:hover {
 }
 @media (max-width: 858px){
     .checkbtn{
-        display: block;
+        display: flex;
+        justify-content: left;
+        color: rgb(255, 255, 255);
     }
     ul{
         position: fixed;
@@ -117,7 +119,17 @@ nav ul li a.active, nav ul li a:hover {
         margin: 50px 0;
         line-height: 30px;
     }
+
+    nav ul li.nav-item1{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
     nav ul li a{
+        font-size: 20px;
+    }
+
+    nav ul li.nav-item1 a.nav-link1{
         font-size: 20px;
     }
     li a:hover, li a.active{

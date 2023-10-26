@@ -6,95 +6,104 @@
 <head>
 <title>WALOK - Restaurante Oriental</title>
 <meta charset="utf-8">
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <link rel="icon" type="walok" href="./img/favicon.ico">
-  <link href="css/header.css" rel="stylesheet" type="text/css">     <!--style.css document-->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap" rel="stylesheet">
-  <link href="css/font-awesome.min.css" rel="stylesheet">     <!--font-awesome-->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">  <!--bootstrap-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  <!--googleapis jquery-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <!--font-awesome-->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>                          <!--bootstrap-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>           <!--bootstrap-->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>            <!--bootstrap-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="walok" href="./img/favicon.ico">
+<link href="css/header.css" rel="stylesheet" type="text/css">     <!--style.css document-->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap" rel="stylesheet">
+<!-- <link href="css/font-awesome.min.css" rel="stylesheet"> -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">  <!--bootstrap-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  <!--googleapis jquery-->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>                          <!--bootstrap-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>              <!--bootstrap-->         <!--bootstrap-->
 </head>
 <body>
  <!---navbar--->   
-<nav class="navbar navbar-expand-md navbar-light fixed-top">
-        <div class="container">
-        <a href="./index.php" class="enlace">
+ <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <a href="index.php" class="enlace">
             <img src="img/Logo_Walok.png" alt="" class="logo">
         </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navi">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navi">
-                <ul class="navbar-nav mr-auto">
-                    <?php
-                    //establecer la barra de navegación al iniciar sesión
-                    if(isset($_SESSION['user_id'])){ echo'
-                    <li class="nav-item">
-                        <a class="nav-link" href="reservation.php" >Nueva reserva</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="view_reservations.php" >Ver reservas</a>
-                    </li>';
-                    
-                    //establecer la barra de navegación al iniciar sesión y el rol de administrador
-                    if($_SESSION['role']==2) {   
+            
+        <ul>
+            <?php
+                //establecer la barra de navegación al iniciar sesión
+                if(isset($_SESSION['user_id'])){ 
                     echo'
-                    <li class="nav-item">
-                        <a class="nav-link" href="schedule.php" >Editar horario</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="tables.php" >Editar mesas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="view_tables.php" >Ver mesas</a>
-                    </li>';    
+                        <li class="nav-item">
+                            <a class="nav-link" href="reservation.php" >Nueva reserva</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="view_reservations.php" >Ver reservas</a>
+                        </li>';
+                            
+                        //establecer la barra de navegación al iniciar sesión y el rol de administrador
+                        if($_SESSION['role']==2) {   
+                            echo'
+                            <li class="nav-item">
+                                <a class="nav-link" href="schedule.php" >Editar horario</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="tables.php" >Editar mesas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="view_tables.php" >Ver mesas</a>
+                            </li>';    
+                        }
                     }
-                    }
-                    //página principal no registrada en la barra de navegación
-                    else { echo'
-                    <li class="nav-item">
-	                 <a class="nav-link" href="./index.php">Inicio</a>
-	             </li>
-	            <li class="nav-item">
-	                <a class="nav-link" href="./carta.php">Carta</a>
-	            </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./contacto.php">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./reserva.php">Reserva</a>
-                    </li>
-                    '; } 
-                    ?>
-                    
-                </ul>
-                
-                    <?php
-                    // Botón de cierre de sesión cuando el usuario está conectado
-                    if(isset($_SESSION['user_id'])){
+                        //página principal no registrada en la barra de navegación
+                    else { 
+                    echo'
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.php">Inicio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./carta.php">Carta</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.php">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./reserva.php">Reserva</a>
+                        </li>
+                            
+                        <li class="nav-item1">
+                            <a class="nav-link1" data-toggle="modal" data-target="#myModal_reg">Registrar</a>
+                        </li>
+
+                        <li class="nav-item1">
+                            <a class="nav-link1" data-toggle="modal" data-target="#myModal_login">Iniciar sesión<a>
+                        </li>
+                    '; 
+                } 
+
+                if(isset($_SESSION['user_id'])){
                     echo '
                     <form class="navbar-form navbar-right" action="includes/logout.inc.php" method="post">
                     <button type="submit" name="logout-submit" class="btn btn-outline-dark">Cerrar sesión</button>
                     </form>';
-                    }
-                    else{  
-                    echo '
-                    <div>
-                    <ul class="navbar-nav ml-auto">
-			<li ><a data-toggle="modal" data-target="#myModal_reg" style:font-weight: bold;>Registrar</a></li>
-			<li><a data-toggle="modal" data-target="#myModal_login">Iniciar sesión</a></li>
-                    </ul> 
-                    </div>
-                    ';} 
-                    ?>
-              
-            </div>
-        </div>
-</nav>
+                }
+            ?>
+                    
+        </ul>
+                
+        <?php
+            // Botón de cierre de sesión cuando el usuario está conectado
+            if(isset($_SESSION['user_id'])){
+                echo '
+                <form class="navbar-form navbar-right" action="includes/logout.inc.php" method="post">
+                <button type="submit" name="logout-submit" class="btn btn-outline-dark">Cerrar sesión</button>
+                </form>';
+            } 
+        ?>
+    </nav>
+    
 
 <div class="container">
   <!-- The Modal -->                          
@@ -272,5 +281,6 @@
         </div>
     </div>
 </div>
+
    
 

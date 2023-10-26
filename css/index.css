@@ -18,7 +18,7 @@
     background-size: cover;
     width: 100%;
     height: auto;
-    padding: 120px;
+    padding: 130px 50px 250px 40px;
     transition: opacity 0.9s ease-in-out;
 }
 .index-header{
