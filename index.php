@@ -7,13 +7,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
     
     <div class="body-container">
         <div class="index-header">
             <div class="index-font">
                 <h1> 
-                    Bienvenidos a 
+                    Bienvenido a 
                     <br>
                     Wa Lok
                 </h1>
@@ -37,7 +36,7 @@
 
             <div class="index-font">
                 <h1> 
-                    Bienvenidos a 
+                    Bienvenido a 
                     <br>
                     Wa Lok
                 </h1>
@@ -61,7 +60,7 @@
 
             <div class="index-font">
                 <h1> 
-                    Bienvenidos a 
+                    Bienvenido a 
                     <br>
                     Wa Lok
                 </h1>
@@ -80,29 +79,44 @@
                 </div>
            </div>
         </div>
-
+        <div class="tittle">
+            <span class="aboutUs">Sobre Nosotros</span>
+            <hr class="separator">
+        </div>
         <div class="text">
             <div class="content-top">
                 <div class="content-text">
-                    <h2>Historia</h2>
-                    <p>Los origenes de nuestro restaurante se remontan al año 1994, cuando llegó al Perú, Alan Chang, un muchacho de 20 años que no sabía una sola palabra en español, pero que aún así, aprendió todo lo que pudo sobre gastronomía mientras trabajaba como cocinero en el Barrio Chino del Cercado de Lima.</p>
+                    <h2>Nuestra Historia</h2>
+                    <p>Nuestro origen se remonta al año 1994, cuando llegó al Perú, Alan Chang, un muchacho de 20 años que no sabía una sola palabra en español, pero que aún así, aprendió todo lo que pudo sobre gastronomía mientras trabajaba como cocinero en el Barrio Chino del Cercado de Lima.</p>
                 </div>
     
                 <div class="content-img">
-                    <img src="./img/historia.webp" id="img-content">
+                    <img src="./img/historia.webp" class="img-content">
                 </div>
             </div>
             
             <div class="content-botton">
                 <div class="content-img">
-                    <img src="./img/mision.webp" id="img-content">
+                    <img src="./img/mision.webp" class="img-content">
                 </div>
     
                 <div class="content-text">
-                    <h2>Misión</h2>
-                    <p>Brindar una autentica comida oriental de alta calidad que deleite a nuestros clientes con sabores únicos, tradicionales y un servicio excepcional.</p>
+                    <h2>Nuestra Misión</h2>
+                    <p>Brindarte una autentica comida oriental de alta calidad que te deleite con sabores únicos, tradicionales y un servicio excepcional.</p>
                 </div>
             </div>
+        </div>
+
+        <div class="icon" >
+            <img src="./img/icon-fireworks.png" alt="icon" class="icon-fi" >
+            <hr class="separator">
+        </div>
+
+        <div class="images">
+            <img src="./img/cultura.webp" alt="" class="decorate-img">
+            <img src="./img/tradicion.webp" alt="" class="decorate-img">
+            <img src="./img/inside.webp" alt="" class="decorate-img">
+            
         </div>
     </div>
     <footer class="footer">
@@ -132,6 +146,5 @@
             <small>&copy; 2023 <b>Wa Lok</b> - Todos los derechos reservados.</small>
         </div>
     <script src="js/script_index.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script> 
 </body>
 </html>
