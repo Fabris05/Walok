@@ -72,9 +72,9 @@ nav ul li a.nav-link.active, li a.nav-link:hover{
 }
 
 nav ul li.nav-item1 a.nav-link1.active, li a.nav-link1:hover{
-    background: rgb(229,14,58);
+    background: rgb(188, 185, 185);
     color: rgb(229,14,58);
-    transition: .5s;
+    transition: .7s;
     cursor: pointer;
 }
 
@@ -98,11 +98,28 @@ nav ul li.nav-item1 a.nav-link1.active, li a.nav-link1:hover{
         font-size: 16px;
     }
 }
-@media (max-width: 858px){
-    .checkbtn{
+@media (max-width: 1200px){
+    
+    body nav{
         display: flex;
-        justify-content: left;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    body nav label.checkbtn, .check{
+        display: flex;
         color: rgb(255, 255, 255);
+        margin-left: auto;
+        margin-top: 20px;
+        margin-right: 20px;
+
+    }
+    body nav i{
+        font-size: 45px;
+    }
+    body nav label.check{
+        display: block;
+
     }
     ul{
         position: fixed;

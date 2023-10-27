@@ -20,7 +20,8 @@
 </head>
 <body>
  <!---navbar--->   
- <nav>
+    <nav>
+ 
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
@@ -28,6 +29,7 @@
         <a href="index.php" class="enlace">
             <img src="img/Logo_Walok.png" alt="" class="logo">
         </a>
+        
             
         <ul>
             <?php
