@@ -8,15 +8,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" type="walok" href="./img/favicon.ico">
-<link href="css/header.css" rel="stylesheet" type="text/css">     <!--style.css document-->
+<link href="css/header.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap" rel="stylesheet">
-<!-- <link href="css/font-awesome.min.css" rel="stylesheet"> -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">  <!--bootstrap-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  <!--googleapis jquery-->
-<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>                          <!--bootstrap-->
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>              <!--bootstrap-->         <!--bootstrap-->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>              
 </head>
 <body>
  <!---navbar--->   
@@ -72,15 +71,15 @@
                             <a class="nav-link" href="./contacto.php">Contacto</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./reserva.php">Reserva</a>
+                            <a class="nav-link" href="./reservation.php">Reservar</a>
                         </li>
                             
                         <li class="nav-item1">
-                            <a class="nav-link1" data-toggle="modal" data-target="#myModal_reg">Registrar</a>
+                            <a class="nav-link1" data-toggle="modal" data-target="#myModal_reg"><b>Registrar</b></a>
                         </li>
 
                         <li class="nav-item1">
-                            <a class="nav-link1" data-toggle="modal" data-target="#myModal_login">Iniciar sesión<a>
+                            <a class="nav-link1" data-toggle="modal" data-target="#myModal_login"><b>Iniciar sesión</b><a>
                         </li>
                     '; 
                 } 
@@ -100,8 +99,8 @@
             if(isset($_SESSION['user_id'])){
                 echo '
                 <form class="navbar-form navbar-right" action="includes/logout.inc.php" method="post">
-                <button type="submit" name="logout-submit" class="btn btn-outline-dark">Cerrar sesión</button>
-                </form>';
+                <button type="submit" name="logout-submit" class="btn btn-outline-dark" style="float:right;
+                margin-top: 26px; font-weight:bold; border: solid 2px #343a40; border-color:gray; color:gray; border-radius: 20px;">Cerrar sesión</button></form>';
             } 
         ?>
     </nav>
@@ -156,7 +155,7 @@
             
                     <div class="signin-form">
                     <form action="includes/login.inc.php" method="post">
-                        <p class="hint-text" style="color: #3A3A40;">Si ya tiene una cuenta, inicie sesión.</p>
+                        <p class="hint-text" style="color: #3A3A40; font-size: 24px; text-align:center;">Si ya tiene una cuenta, inicie sesión.</p>
                     <div class="form-group">
                         <input type="text" class="form-control" name="mailuid" placeholder="Usuario o correo electrónico" required="required">
                     </div>
@@ -191,7 +190,6 @@
                 </div>      
             <!-- Modal body -->
                 <div class="modal-body">   
-
                 <?php
                 if(isset($_GET['error'])){
                     //script para que aparezca el modal cuando se produzca un error 
@@ -200,10 +198,7 @@
                                 $("#myModal_reg").modal("show");
                                 });
                             </script> ';
-
-
                     //mensajes para errores y éxito --formulario de registro
-
                     if($_GET['error'] == "emptyfields") {   
                         echo '<h5 class="bg-danger text-center">Complete todos los campos. ¡Inténtelo de nuevo!</h5>';
                     }
@@ -250,7 +245,7 @@
                     <!---formulario de registro -->
                     <div class="signup-form">
                         <form action="includes/signup.inc.php" method="post">
-                            <p class="hint-text" style="color: #3A3A40;">Crea tu cuenta. Es gratis y solo toma un minuto.</p>
+                            <p class="hint-text" style="color: #3A3A40; font-size: 24px; text-align:center;">Crea tu cuenta. ¡Es gratis!</p>
                             <div class="form-group">
                                     <input type="text" class="form-control" name="uid" placeholder="Username" required="required">
                                     <small class="form-text text-muted">El nombre de usuario debe tener entre 4 y 20 caracteres</small>
@@ -266,7 +261,7 @@
                                 <input type="password" class="form-control" name="pwd-repeat" placeholder="Repita la contraseña" required="required">
                             </div>        
                             <div class="form-group">
-                                <label class="checkbox-inline"><input type="checkbox" required="required"> Acepto las <a href="#">Condiciones de Uso</a> &amp; <a href="#">Políticas de privacidad.</a></label>
+                                <label class="checkbox-inline"><input type="checkbox" required="required"> Acepto las <a href="#">Condiciones de Uso </a> &amp; <a href="#"> Políticas de privacidad.</a></label>
                             </div>
                             <div class="form-group">
                                 <button type="submit" name="signup-submit" class="btn btn-dark btn-lg btn-block" >Registrar</button>

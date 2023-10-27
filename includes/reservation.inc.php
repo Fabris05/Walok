@@ -2,13 +2,13 @@
 
 session_start();
 
-//between function.. elenxei an oi xaraktires einai mesa sta oria p thetoume
+//Comprueba si los usuarios están dentro de los límites que establecemos.
 function between($val, $x, $y){
     $val_len = strlen($val);
     return ($val_len >= $x && $val_len <= $y)?TRUE:FALSE;
 }
 
-if(isset($_POST['reserv-submit'])) {//elenxw an exei bei sti selida mesw tou submit
+if(isset($_POST['reserv-submit'])) {    //compruebe si lo ha dicho en la página a través del compromiso
 
 require 'dbh.inc.php';
 
@@ -27,7 +27,6 @@ require 'dbh.inc.php';
     else{
     $tables=ceil(($guests-2)/2);
     }
-    
     
     if(empty($fname) || empty($lname) || empty($date) || empty($time) || empty($guests) || empty($tele)) {
         header("Location: ../reservation.php?error3=emptyfields");
@@ -55,7 +54,7 @@ require 'dbh.inc.php';
     }
     
     else{
-     //checkarw ta available trapezia ana mera   
+     //Revisión de las mensas utilizadas por día 
     $sql = "SELECT t_tables FROM tables WHERE t_date='$date'";
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
@@ -63,10 +62,10 @@ require 'dbh.inc.php';
         $a_tables=$row["t_tables"];
     }
     }
-    else{$a_tables=20;} //default timi
+    else{$a_tables=20;} //cantidad de datos visualizados
         
         
-    //elenxos trapeziwn ews 20 trapezia gia kathe imerominia
+    //consultar tablas hasta 20 datos visualizados
     
     $sql = "SELECT SUM(num_tables) FROM reservation WHERE rdate='$date' AND time_zone='$time'";
     $result = $conn->query($sql);
@@ -97,7 +96,7 @@ require 'dbh.inc.php';
                 }
         }
     }
-    
+    // Cerramos conexión con la db
    mysqli_stmt_close($stmt);
    mysqli_close($conn);
 }

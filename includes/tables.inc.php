@@ -1,6 +1,6 @@
 <?php
 
-//post tables
+//tablas de publicaciones
 
 if(isset($_POST['tables'])){
     
@@ -63,7 +63,7 @@ require 'dbh.inc.php';
            }
        }
     }
-   //kleinw to connection
+   //cierro la conexión de db
    mysqli_stmt_close($stmt);
    mysqli_close($conn);
 }

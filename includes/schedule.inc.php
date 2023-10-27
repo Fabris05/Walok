@@ -64,7 +64,7 @@ require 'dbh.inc.php';
            }
        }
     }
-   //kleinw to connection
+   //Cerramos conexión con la db
    mysqli_stmt_close($stmt);
    mysqli_close($conn);
 }

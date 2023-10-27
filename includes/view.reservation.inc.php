@@ -9,7 +9,7 @@ if(isset($_SESSION['user_id'])){
     $user = $_SESSION['user_id'];
     $role = $_SESSION['role'];
     
-    //rolos pelati
+    //rol de cliente
     if($role==1){
     $sql = "SELECT * FROM reservation WHERE user_fk = $user";
     $result = $conn->query($sql);
@@ -58,7 +58,7 @@ if(isset($_SESSION['user_id'])){
     }
     
     
-    //rolos upeuthinou 
+    //rol responsable 
     
     else if($role==2 || 3){
     $sql = "SELECT * FROM reservation";

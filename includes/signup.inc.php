@@ -1,12 +1,12 @@
 <?php
 
-//between function.. elenxei an oi xaraktires einai mesa sta oria p thetoume
+//Comprueba si los usuarios están dentro de los límites que establecemos.
 function between($val, $x, $y){
     $val_len = strlen($val);
     return ($val_len >= $x && $val_len <= $y)?TRUE:FALSE;
 }
 
-if(isset($_POST['signup-submit'])) {//elenxw an exei bei sti selida mesw tou submit
+if(isset($_POST['signup-submit'])) {    //compruebe si lo ha dicho en la página a través del compromiso
 
     
     require 'dbh.inc.php';
@@ -50,7 +50,7 @@ if(isset($_POST['signup-submit'])) {//elenxw an exei bei sti selida mesw tou sub
            exit();
        }
        else {
-           mysqli_stmt_bind_param($stmt, "ss", $username, $email);     //elenxos an uparxei email kai username idi
+           mysqli_stmt_bind_param($stmt, "ss", $username, $email);     //revisando si hay un correo que está en uso
            mysqli_stmt_execute($stmt);
            mysqli_stmt_store_result($stmt);
            $resultCheck = mysqli_stmt_num_rows($stmt);
@@ -68,7 +68,7 @@ if(isset($_POST['signup-submit'])) {//elenxw an exei bei sti selida mesw tou sub
                     exit();
                 }
                 else {
-                    $hashedPwd = password_hash($password, PASSWORD_DEFAULT);    //encrypting password
+                    $hashedPwd = password_hash($password, PASSWORD_DEFAULT);    //Contraseña cifrada
                             
                             
                     mysqli_stmt_bind_param($stmt, "sss", $username, $email, $hashedPwd);
@@ -81,7 +81,7 @@ if(isset($_POST['signup-submit'])) {//elenxw an exei bei sti selida mesw tou sub
            
        }
    } 
-   //kleinw to connection
+   //Cerramos conexión con la db
    mysqli_stmt_close($stmt);
    mysqli_close($conn);
    

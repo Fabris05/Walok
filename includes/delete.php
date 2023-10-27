@@ -1,7 +1,7 @@
 <?php
 
 
-//delete reservation
+//elimina reserva
 
 if(isset($_POST['delete-submit'])) {
  
@@ -17,9 +17,7 @@ if (mysqli_query($conn, $sql)) {
 }
 }
 
-
-
-//delete tables
+//elimina mesas
 
 
 if(isset($_POST['delete-table'])) {

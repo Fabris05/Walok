@@ -5,20 +5,16 @@ if(isset($_SESSION['user_id'])){
     
     require 'includes/dbh.inc.php';
 
-    
     $user = $_SESSION['user_id'];
     $role = $_SESSION['role'];
      
-
-    
-    //view reserved tables per date and time-zone
+    //ver mesas reservadas por fecha y zona horaria
     
     if($role==2){
         
     $sql = "SELECT SUM(num_tables), rdate, time_zone FROM reservation GROUP BY rdate, time_zone";
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
-        
         echo
         '   <div class="container">
             <div class="row">
@@ -43,19 +39,13 @@ if(isset($_SESSION['user_id'])){
               </tbody>";
             
         }
-    
-        
         echo "</table>";
-    
        }
     
     else {    echo "<p class='text-center'>¡La lista esta vacía!<p>"; }    
-        
        echo'</div>'; 
-        
-      
        
-    //view total tables per date that have been submited from set tables  
+    //ver el total de tablas por fecha que se han enviado desde tablas establecidas
        
     $sql = "SELECT * FROM tables ORDER BY t_date";
     $result = $conn->query($sql);
@@ -63,9 +53,7 @@ if(isset($_SESSION['user_id'])){
         
         echo'  
          <div class="col-sm text-center">
-         <p class="text-white bg-dark text-center">Mesas totales por fecha</p>
-        ';
-        
+         <p class="text-white bg-dark text-center">Mesas totales por fecha</p>';
         echo
         '
             <table class="table table-hover table-bordered table-responsive-sm text-center">
@@ -88,23 +76,11 @@ if(isset($_SESSION['user_id'])){
                           </form>
                     </tr>
               </tbody>";
-            
         }   
         echo "</table>";
-    
-    
     }
     else {    echo "<p class='text-center'>¡La lista esta vacía!<p>"; }
-    
-   
-    
     echo '</div></div></div>';
     }  
-
-    
-    
-    
-    
-
 mysqli_close($conn);
 }

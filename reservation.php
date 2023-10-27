@@ -1,12 +1,11 @@
 <?php 
     require "header.php";
 ?><br><br>
-        <link rel="stylesheet" href="css/reserva.css">
+        <link rel="stylesheet" href="css/reservation.css">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
 <body>
-
 <div class="container">
     <h3 class="text-center"><br>Realizar reserva<br></h3>   
     <div class="row">
@@ -106,8 +105,10 @@ if(isset($_SESSION['user_id'])){
 
     else {
         echo '	<p class="text-center text-danger"><br>¡No has iniciado sesión!<br></p>
-       <p class="text-center">¡Para hacer una reserva tienes que crear una cuenta!<br><br><p>';  
-        
+       <p class="text-center">¡Para hacer una reserva tienes que crear una cuenta!<br><br><p>;
+       <div style="display: flex; justify-content: center; align-items: center; padding-bottom: 20px; ">
+       <img src="./img/wk.webp" alt="Walok" style="align-items:center;"> 
+       </div>';
     }
     ?>
 
@@ -115,8 +116,7 @@ if(isset($_SESSION['user_id'])){
         </div>
     </div>
 </div>
-<br><br>
-<footer class="footer">
+    <footer class="footer">
         <div class="g1">
             <div class="box">
                 <h2>Síguenos</h2>
@@ -128,7 +128,7 @@ if(isset($_SESSION['user_id'])){
             </div>
             <div class="box">
                 <figure>
-                    <a href="/reclamaciones.php">
+                    <a href="./reclamaciones.php">
                         <img src="./img/libro-de-reclamaciones.webp" alt="libro-de-reclamaciones">
                     </a>
                 </figure>
@@ -142,5 +142,6 @@ if(isset($_SESSION['user_id'])){
         <div class="g2">
             <small>&copy; 2023 <b>Wa Lok</b> - Todos los derechos reservados.</small>
         </div>
+    </footer>
 </body>
 </html>
