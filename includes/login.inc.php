@@ -12,7 +12,7 @@ if (isset($_POST['login-submit'])) {
         exit();
     }
     else {
-        $sql = "SELECT * FROM users WHERE uidUsers=? OR emailUsers=?";     //sundesi mesw username kai email
+        $sql = "SELECT * FROM users WHERE uidUsers=? OR emailUsers=?";     //consulta con el ID de usuario o EMAIL
         $stmt = mysqli_stmt_init($conn);
         if(!mysqli_stmt_prepare($stmt, $sql)) {
             header("Location: ../index.php?error1=error");
