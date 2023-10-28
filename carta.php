@@ -36,7 +36,7 @@
             </div>
         </div>
         <!--Final Carrusel Platillos-->
-        <!--Boton para descargar menu completo-->
+        <!--Boton para observar menu completo-->
         <div class="buton-pdf">
             <button id="download">
                 <a href="http://www.walok.com.pe/archivos/CARTA_WALOK_2021b_rojo.pdf" class="urlCartaWallok" target="_blank">
@@ -44,8 +44,6 @@
                 </a>
             </button>
         </div>
-        <!--Boton para descargar-->
-    <script src="js/caruselCarta.js"></script>
 
     <footer class="footer">
         <div class="g1">
@@ -74,5 +72,6 @@
             <small>&copy; 2023 <b>Wa Lok</b> - Todos los derechos reservados.</small>
         </div>
 
+    <script src="js/caruselCarta.js"></script>
 </body>
 </html>
