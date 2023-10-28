@@ -1,2 +1,7 @@
 # Walok
-Repositorio del proyecto de diseño web "Wa Lok" perteneciente al grupo 2 del curso de Taller de Programación Web. Sistema de reserva de mesas actualizado
+VERSION 4.0
+  - HTML -> PHP.
+  - Apartado visual mejorado.
+  - Responsive mejorado.
+  - Backend incluido (only reservas).
+  - Base de datos desplegada en Amazon AWS.
