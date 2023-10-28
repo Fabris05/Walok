@@ -28,7 +28,7 @@ require 'dbh.inc.php';
            exit();
        }
        else {
-           mysqli_stmt_bind_param($stmt, "s", $date);     //elenxos an uparxei idi grammeni i hmerominia!
+           mysqli_stmt_bind_param($stmt, "s", $date);     //comprobamos si la fecha ya está ingresada
            mysqli_stmt_execute($stmt);
            mysqli_stmt_store_result($stmt);
            $resultCheck = mysqli_stmt_num_rows($stmt);
