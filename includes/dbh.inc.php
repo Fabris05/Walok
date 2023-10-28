@@ -1,8 +1,8 @@
 <?php
 
-$servername = "localhost";
-$dBUsername = "root";
-$dBPassword = "";
+$servername = "databasetpw.chh7h6xrpzrp.us-east-2.rds.amazonaws.com";
+$dBUsername = "admin";
+$dBPassword = "admin123";
 $dBName = "loginsystem";
 
 $conn = mysqli_connect($servername, $dBUsername, $dBPassword, $dBName);
