@@ -8,7 +8,7 @@ function between($val, $x, $y){
     return ($val_len >= $x && $val_len <= $y)?TRUE:FALSE;
 }
 
-if(isset($_POST['reserv-submit'])) {    //compruebe si lo ha dicho en la página a través del compromiso
+if(isset($_POST['reserv-submit'])) {    //compruebe si lo ha dicho en la página a través del botòn
 
 require 'dbh.inc.php';
 
