@@ -18,9 +18,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>              
 </head>
 <body>
- <!---navbar--->   
     <nav>
- 
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
@@ -28,8 +26,6 @@
         <a href="index.php" class="enlace">
             <img src="img/Logo_Walok.png" alt="" class="logo">
         </a>
-        
-            
         <ul>
             <?php
                 //establecer la barra de navegación al iniciar sesión
@@ -106,19 +102,18 @@
     </nav>
     
 
-<div class="container">
-  <!-- The Modal -->                          
+<div class="container">                       
     <div class="modal fade" id="myModal_login">
         <div class="modal-dialog">
           <div class="modal-content">
 
-            <!-- Modal Header -->
+            <!-- header -->
             <div class="modal-header">
               <h4 class="modal-title">Login</h4>
               <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
 
-            <!-- Modal body -->
+            <!-- body -->
             <div class="modal-body">
             
             <?php
@@ -168,7 +163,7 @@
                             </form>
                     </div>   
                 </div>
-                <!-- Modal footer -->
+                <!-- footer -->
                 <div class="modal-footer">
                   <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
                 </div>
@@ -179,16 +174,15 @@
 
     
 <div class="container">
-  <!-- The Modal -->
     <div class="modal fade" id="myModal_reg">
         <div class="modal-dialog">
             <div class="modal-content">
-            <!-- Modal Header -->
+            <!-- header -->
                 <div class="modal-header">
                   <h4 class="modal-title">Formulario de registro</h4>
                   <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>      
-            <!-- Modal body -->
+            <!-- body -->
                 <div class="modal-body">   
                 <?php
                 if(isset($_GET['error'])){
@@ -269,7 +263,7 @@
                         </form>
                     </div> 	
                 </div>        
-                <!-- Modal footer -->
+                <!-- footer -->
                 <div class="modal-footer">
 
                       <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
