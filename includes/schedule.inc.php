@@ -1,9 +1,6 @@
 <?php
 
 
-
-//post schedule
-
 if(isset($_POST['schedule'])){
     
     
