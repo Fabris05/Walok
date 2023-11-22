@@ -30,7 +30,7 @@ if (isset($_POST['login-submit'])) {
                     exit();   
                 }
                 else if($pwdCheck == true) {
-                    session_start();                                //create of sessions
+                    session_start();                               
                     $_SESSION['user_id'] = $row['user_id'];
                     $_SESSION['username'] = $row['uidUsers'];
                     $_SESSION['role'] = $row['role_id'];
