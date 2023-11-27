@@ -1,6 +1,6 @@
 # Walok
-VERSION 4.0
-  - HTML -> PHP.
+VERSION Final
+  - Página web en PHP.
   - Apartado visual mejorado.
   - Responsive mejorado.
   - Backend incluido (only reservas).
