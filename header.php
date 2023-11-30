@@ -255,7 +255,7 @@
                                 <input type="password" class="form-control" name="pwd-repeat" placeholder="Repita la contraseña" required="required">
                             </div>        
                             <div class="form-group">
-                                <label class="checkbox-inline"><input type="checkbox" required="required"> Acepto las <a href="#">Condiciones de Uso </a> &amp; <a href="#"> Políticas de privacidad.</a></label>
+                                <label class="checkbox-inline"><input type="checkbox" required="required"> Acepto las <a href="https://walokrestaurant.rf.gd/politicas.php">Condiciones de Uso & Políticas de privacidad.</a></label>
                             </div>
                             <div class="form-group">
                                 <button type="submit" name="signup-submit" class="btn btn-dark btn-lg btn-block" >Registrar</button>

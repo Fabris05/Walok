@@ -116,6 +116,7 @@ if(isset($_SESSION['user_id'])){
         </div>
     </div>
 </div>
+<?php require "walokbot.php"; ?>
     <footer class="footer">
         <div class="g1">
             <div class="box">
@@ -142,6 +143,9 @@ if(isset($_SESSION['user_id'])){
         <div class="g2">
             <small>&copy; 2023 <b>Wa Lok</b> - Todos los derechos reservados.</small>
         </div>
+        <button class="chatbot-toggler">
+        <span class="material-symbols-rounded">mode_comment</span>
+        <span class="material-symbols-outlined">close</span> 
     </footer>
 </body>
 </html>

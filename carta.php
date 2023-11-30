@@ -23,12 +23,11 @@
                             <img src="img/platillos/arroz-chaufa-especial.webp" alt="ArrozChaufaEspecial" class="imgn">
                         </div>
                         <div class="info-platillo-carousel-individual" id="textPlatillo">
-                            <h3 style="fon-wight: bold;">Arroz Chaufa Especial</h3>
+                            <h3 style="font-weight: bold;">Arroz Chaufa Especial</h3>
                             <p>Arroz frito previamente mezclado con huevo y salteado con lomito de chancho, langostino, pollo y cebolla china</p>
                             <p style="font-style: italic; font-weight: bold;">Precio : S/. 25.00</p>
                         </div>
                     </div>
-                    <!--<div class="pointers" id="pointer"></div>-->
                 </div><!--aqui-->
                 <div class="return" id="returnLefth">
                     <img src="img/platillos/adelante.webp" alt="volver" id="Return">
@@ -37,14 +36,16 @@
         </div>
         <!--Final Carrusel Platillos-->
         <!--Boton para observar menu completo-->
-        <div class="buton-pdf">
+        <div class="buton-pdf" style="display: flex; justify-content: center; align-items: center;">
             <button id="download">
-                <a href="http://www.walok.com.pe/archivos/CARTA_WALOK_2021b_rojo.pdf" class="urlCartaWallok" target="_blank">
-                    Ver Carta Walok Completa
-                </a>
+                <a href="./carta_walok.pdf" class="urlCartaWallok" target="_blank" style="color: #fff;">Ver Carta Walok Completa</a>
             </button>
         </div>
-
+        <button class="chatbot-toggler">
+        <span class="material-symbols-rounded">mode_comment</span>
+        <span class="material-symbols-outlined">close</span>
+    </button>
+<?php require "walokbot.php"; ?>
     <footer class="footer">
         <div class="g1">
             <div class="box">
