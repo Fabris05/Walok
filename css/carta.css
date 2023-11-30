@@ -161,8 +161,8 @@
 .content{
     display: flex;
     flex-direction: column;
-    padding: 4px;
-    margin: 10px;
+    /* padding: 4px; */
+    /* margin: 10px; */
     justify-content: center;
 }
 .title-letter{

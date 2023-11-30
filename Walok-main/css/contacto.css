@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* BODY */
+body{
+    /* height: 100vh; */
+    display: grid;
+    align-items: center;
+    background-color: #222222;
+}
+.buttons{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    align-items: center;
+    justify-content: center;
+    .bt-ba, .bt-mi{
+        text-decoration: none;
+        margin-right: 30px;
+        font-size: 20px;
+        cursor: pointer;
+        color: white;
+        background-color: #E50E3A;
+        border-radius: 8px;
+        padding: 2px 8px;
+    }
+}
+/* Map and visit */
+.contact-wrap{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact-wrap2{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact-in{
+    padding: 40px 30px;
+}
+.contact-in:nth-child(1){
+    flex: 50%;
+    padding: 0;
+}
+.contact-in:nth-child(2){
+    flex: 40%;
+    margin-right: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: #E50E3A;
+}
+.contact-in h1{
+    font-size: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.contact-in p{
+    font-size: 15px;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.contact-in p i{
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    color: #fff;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+}
+.contact-in iframe{
+    width: 100%;
+    height: 100%;
+}
+
+/* Testimonials */
+.title-clients{
+    font-size: 40px;
+    text-align: center; 
+    color: #fff; 
+    padding: 20px; 
+}
+.wrapper {
+    background-color: #ffffff;
+    position: relative;
+    width: 80vw;
+    max-width: 41em;
+    min-height: 25em;
+    border-radius: 0.6em;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    box-shadow: 0 1.8em 3em rgba(1, 17, 39, 0.15);
+    display: inline-flexbox;
+  }
+  .testimonial-container {
+    width: 85%;
+    height: 100%;
+    position: relative;
+    margin: auto;
+    padding: 4.8em 3.2em;
+  }
+  .wrapper button {
+    font-size: 1.8em;
+    height: 2.2em;
+    width: 2.2em;
+    background-color: #ffffff;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    border: none;
+    color: #E50E3A;
+    box-shadow: 0 0 1em rgba(1, 17, 39, 0.25);
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  button#next {
+    right: -1.1em;
+  }
+  button#prev {
+    left: -1.1em;
+  }
+  .testimonial-container p {
+    color: #5e5e5e;
+    text-align: center;
+    font-size: 0.9em;
+    line-height: 2em;
+    letter-spacing: 0.05em;
+  }
+  .testimonial-container img {
+    display: block;
+    margin: 1.8em auto 1.25em auto;
+    border-radius: 50%;
+    width: 4.4em;
+  }
+  .testimonial-container h3 {
+    color: #2d3d67;
+    font-size: 1em;
+    text-align: center;
+  }
+  .testimonial-container h6 {
+    color: #bcc4da;
+    font-size: 0.9em;
+    letter-spacing: 0.03em;
+    font-weight: 400;
+    text-align: center;
+  }
+
+
+/* FOOTER */
+.footer{
+    width: 100%;
+    background-color: #121212;
+}
+.footer .g1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+.footer .g1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .g1 .box figure img{
+    width: 180px;
+}
+.footer .g1 .box h2{
+    font-weight:bold;
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+}
+.footer .g1 .box {
+    text-align: center;
+}
+.footer .g1 .box .info{
+    color: #fff;
+}
+.footer .g1 .box .info:hover{
+    color: #E50E3A;
+}
+.footer .g1 .box .social a{
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+    width: 55px;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 40px;
+    padding-left: 32px;
+    /* text-align: center;
+    justify-content: center; */
+    transition: all 300ms ease;
+}
+.footer .g1 .box .social a:hover{
+    color: #E50E3A;
+}
+.footer .g2{
+    background-color: #E50E3A;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+}
+.footer .g2 small{
+    font-size: 15px;
+}
+
+/*header-footer*/
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #121212;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: #E50E3A;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+    .buttons{
+        .bt-ba, .bt-mi{
+            text-decoration: none;
+            margin-right: 8px;
+            font-size: 15px;
+            cursor: pointer;
+            color: white;
+            background-color: #E50E3A;
+            border-radius: 8px;
+            padding: 2px 8px;
+        }
+    }
+    .footer .g1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+    .contact-in:nth-child(1){
+        flex: 45%;
+        margin: 0;
+    }
+    .contact-in:nth-child(2){
+        flex: 45%;
+        margin: 0;
+        background: #E50E3A;
+    }
+    .contact-in p{
+        align-items: start;
+        text-align: start;
+    }
+    .contact-in p i{
+        display: none;
+    }
+    .title-clients{
+        font-size: 25px;
+    }
+    .wrapper {
+        font-size: 14px;
+      }
+}
