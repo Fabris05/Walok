@@ -41,6 +41,7 @@ body{
 }
 .chatbot{
     position: fixed;
+    z-index: 1000;
     right: 40px;
     bottom: 100px;
     width: 420px;
@@ -153,6 +154,7 @@ body{
     visibility: visible;
 }
 
+
 @media(max-width:490px){
     .chatbot{
         right: 0;
@@ -162,26 +164,9 @@ body{
         border-radius: 0;
     }
     .chatbot .chatbox{
-        height: 90%;
+        max-height: 90%;
     }
     .chatbot header span{
         display: block;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
