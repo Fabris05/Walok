@@ -20,7 +20,7 @@ div .container{
     padding: 28px;
     margin: 0 28px;
     box-shadow: 0 15px 20px black;
-    background-color: white;
+    background-color: rgb(34, 34, 34);
     color: black;
 }
 h2{

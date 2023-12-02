@@ -75,7 +75,7 @@
                         </li>
 
                         <li class="nav-item1">
-                            <a class="nav-link1" data-toggle="modal" data-target="#myModal_login"><b>Iniciar sesión</b><a>
+                            <a class="nav-link1" data-toggle="modal" data-target="#myModal_login"><b>Iniciar sesión</b></a>
                         </li>
                     '; 
                 } 

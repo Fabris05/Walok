@@ -20,14 +20,15 @@ require "header.php";
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.8738791027977!2d-77.02771472410473!3d-12.052197642003664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8ba7c6a41eb%3A0xe258c14ae6a4e626!2sChifa%20Wa%20Lok!5e0!3m2!1ses!2spe!4v1695415842582!5m2!1ses!2spe"
                 width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </div>
         <div class="contact-in">
             <h1>Visítanos</h1>
             <p><i class="fa-solid fa-location-dot"></i>Jr. Paruro 878, Lima 15001</p>
             <p><i class="fa-regular fa-envelope"></i>correo@walok.com.pe</p>
             <p><i class="fa-solid fa-phone"></i>(01) 6845127</p>
-            <p><i class="fa-brands fa-whatsapp"></i>(+51) 988888888 <b>- Sólo para delivery</b></p>
+            <p><i class="fa-brands fa-whatsapp"></i>(+51) 988888888 <b> Sólo para delivery</b></p>
         </div>
     </div>
 
@@ -43,7 +44,7 @@ require "header.php";
             <p><i class="fa-solid fa-location-dot"></i>Av. Angamos 700, Miraflores 15074</p>
             <p><i class="fa-regular fa-envelope"></i>correo@walok.com.pe</p>
             <p><i class="fa-solid fa-phone"></i>(01) 6845127</p>
-            <p><i class="fa-brands fa-whatsapp"></i>(+51) 988888888 <b>- Sólo para delivery</b></p>
+            <p><i class="fa-brands fa-whatsapp"></i>(+51) 988888888 <b>Sólo para delivery</b></p>
         </div>
     </div>
 
@@ -124,13 +125,14 @@ require "header.php";
                 }
                 ?>
 
-            </div><br>
+            </div>
         </div>
         <?php require "walokbot.php" ?>
 
-        <script src="js/script.js"></script>
+        
         <footer class="footer">
         <div class="g1">
+            
             <div class="box">
                 <h2>Síguenos</h2>
                 <div class="social">
@@ -155,6 +157,8 @@ require "header.php";
         <div class="g2">
             <small>&copy; 2023 <b>Wa Lok</b> - Todos los derechos reservados.</small>
         </div>
+
+        <script src="js/script.js"></script>
 </body>
 
 </html>
