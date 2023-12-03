@@ -20,4 +20,6 @@ document.addEventListener("DOMContentLoaded", function() {
     headers[2].classList.add('ocultar');
 
     setInterval(mostrarHeader, 8000);
+
+    
 });

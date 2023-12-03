@@ -15,7 +15,7 @@
        <div class="carousel">
             <div class="carousel-dynamic">
                 <div class="goback" id="gobackRight">
-                    <img id="goBack" src="img/platillos/atras.webp" alt="retroceder">
+                    <i class="fa-solid fa-arrow-left"></i>
                 </div>
                 <div class="info-platillo-carousel"><!--aqui-->
                     <div class="info-platillo-carousel-top">
@@ -30,7 +30,7 @@
                     </div>
                 </div><!--aqui-->
                 <div class="return" id="returnLefth">
-                    <img src="img/platillos/adelante.webp" alt="volver" id="Return">
+                    <i class="fa-solid fa-arrow-right"></i>
                 </div>
             </div>
         </div>
@@ -41,10 +41,7 @@
                 <a href="./carta_walok.pdf" class="urlCartaWallok" target="_blank" style="color: #fff;">Ver Carta Walok Completa</a>
             </button>
         </div>
-        <button class="chatbot-toggler">
-        <span class="material-symbols-rounded">mode_comment</span>
-        <span class="material-symbols-outlined">close</span>
-    </button>
+        
 <?php require "walokbot.php"; ?>
     <footer class="footer">
         <div class="g1">

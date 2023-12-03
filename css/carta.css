@@ -294,6 +294,8 @@ dd{
     padding: 10px;
     border-radius: 10px;
     background-color: #E50E3A;
+    backdrop-filter: blur(20px);
+    box-shadow: #E50E3A 0px 7px 29px 0px;
     display: flex;
     flex-direction: column;
 }
@@ -307,18 +309,24 @@ dd{
     width: 500px;
     transition: opacity 0.3s ease-in-out;
 }
+
+i{
+    color: white;
+    font-size: 40px;
+}
+i:hover{
+    color: rgb(251, 197, 47);
+    transition: .5s;
+}
 .info-platillo-carousel-individual{
-    margin-top: 40px;
-    margin-bottom: 40px;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding-top: 40px;
-    padding-left: 20px;
+
+    margin: 40px 10px 40px 10px;
+    padding: 40px 0px 0px 20px;
     display: flex;
     flex-direction: column;
     width: 250px;
     background-color: #fff;
-    border-radius: 40px 40px 0px 0px;
+    border-radius: 20px 20px 20px 20px;
 }
 .info-platillo-carousel-individual h3{
     order: 1;
@@ -365,6 +373,7 @@ dd{
 }
 #download:hover{
     background-color: #E50E3A;
+    transition: .5s;
 }
 .urlCartaWallok{
     color: #fff;

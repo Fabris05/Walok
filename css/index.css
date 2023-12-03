@@ -20,7 +20,7 @@
     background-size: cover;
     background-color: #121212;
     width: 100%;
-    height: auto;
+    height: 95vh;
     padding: 130px 50px 250px 40px;
 }
 
@@ -41,16 +41,16 @@
     background-color: #121212;
 }
 .index-header{
-    background-image: linear-gradient(to right, rgb(0 0 0 / .5),rgb(0 0 0 / .5)), url('../img/index-1.webp');
+    background-image: linear-gradient(to right, rgb(0 0 0 / .6),rgb(0 0 0 / .6)), url('../img/index-1.webp');
 }
 .index-header2{
     
-    background-image: linear-gradient(to right, rgb(0 0 0 / .5),rgb(0 0 0 / .5)), url('../img/index2.webp');
+    background-image: linear-gradient(to right, rgb(0 0 0 / .6),rgb(0 0 0 / .6)), url('../img/index2.webp');
 }
 
 .index-header3{
     
-    background-image: linear-gradient(to right, rgb(0 0 0 / .5),rgb(0 0 0 / .5)), url('../img/index.3.webp');
+    background-image: linear-gradient(to right, rgb(0 0 0 / .8),rgb(0 0 0 / .6)), url('../img/index.3.webp');
 }
 
 .index-font{
@@ -69,6 +69,7 @@ h1{
 
 .index-resume{
     font-size: 23px;
+    margin-top: 30px;
     z-index: inherit;
 }
 .buttons-container{

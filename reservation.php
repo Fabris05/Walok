@@ -1,55 +1,52 @@
-<?php 
-    require "header.php";
-?><br><br>
-        <link rel="stylesheet" href="css/reservation.css">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
-<body>
-<div class="container">
-    <h3 class="text-center"><br>Realizar reserva<br></h3>   
-    <div class="row">
-        <div class="col-md-6 offset-md-3">   
-        
-        
 <?php
-if(isset($_SESSION['user_id'])){
-    echo '<p class="text-white bg-dark text-center">Bienvenido(a) '. $_SESSION['username'] .', ¡Crea tu reserva aquí!</p>';
-      
-  //error handling:
-    
-    if(isset($_GET['error3'])){
-        if($_GET['error3'] == "emptyfields") {
-            echo '<h5 class="bg-danger text-center">Complete todos los campos. ¡Inténtelo de nuevo!</h5>';
-        }
-        else if($_GET['error3'] == "invalidfname") {   
-            echo '<h5 class="bg-danger text-center">Nombre no válido. ¡Inténtelo de nuevo!</h5>';
-        }
-        else if($_GET['error3'] == "invalidlname") {   
-            echo '<h5 class="bg-danger text-center">Apellido no válido, ¡inténtelo de nuevo!</h5>';
-        }
-        else if($_GET['error3'] == "invalidtele") {   
-            echo '<h5 class="bg-danger text-center">Teléfono no válido, ¡inténtelo de nuevo!</h5>';
-        }
-        else if($_GET['error3'] == "invalidcomment") {   
-            echo '<h5 class="bg-danger text-center">Comentario no válido, ¡inténtalo de nuevo!</h5>';
-        }
-        else if($_GET['error3'] == "invalidguests") {   
-            echo '<h5 class="bg-danger text-center">Invitados inválidos, por favor intente de nuevo!</h5>';
-        }
-        else if($_GET['error3'] == "full") {   
-            echo '<h5 class="bg-danger text-center">Las reservas están completas en esta fecha y zona horaria. ¡Inténtelo de nuevo!</h5>';
-        }
-    }
-        if(isset($_GET['reservation'])) {   
-           if($_GET['reservation'] == "success"){ 
-            echo '<h5 class="bg-success text-center">¡Tu reserva fue creada exitosamente!</h5>';
-        }
-        }
-        echo'<br>';
+require "header.php";
+?><br><br>
+<link rel="stylesheet" href="css/reservation.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
-     //formulario de reserva 
-    echo '  
+<body>
+    <div class="container">
+        <h3 class="text-center"><br>Realizar reserva<br></h3>
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+
+
+                <?php
+                if (isset($_SESSION['user_id'])) {
+                    echo '<p class="text-white bg-dark text-center">Bienvenido(a) ' . $_SESSION['username'] . ', ¡Crea tu reserva aquí!</p>';
+
+                    //error handling:
+                
+                    if (isset($_GET['error3'])) {
+                        if ($_GET['error3'] == "emptyfields") {
+                            echo '<h5 class="bg-danger text-center">Complete todos los campos. ¡Inténtelo de nuevo!</h5>';
+                        } else if ($_GET['error3'] == "invalidfname") {
+                            echo '<h5 class="bg-danger text-center">Nombre no válido. ¡Inténtelo de nuevo!</h5>';
+                        } else if ($_GET['error3'] == "invalidlname") {
+                            echo '<h5 class="bg-danger text-center">Apellido no válido, ¡inténtelo de nuevo!</h5>';
+                        } else if ($_GET['error3'] == "invalidtele") {
+                            echo '<h5 class="bg-danger text-center">Teléfono no válido, ¡inténtelo de nuevo!</h5>';
+                        } else if ($_GET['error3'] == "invalidcomment") {
+                            echo '<h5 class="bg-danger text-center">Comentario no válido, ¡inténtalo de nuevo!</h5>';
+                        } else if ($_GET['error3'] == "invalidguests") {
+                            echo '<h5 class="bg-danger text-center">Invitados inválidos, por favor intente de nuevo!</h5>';
+                        } else if ($_GET['error3'] == "full") {
+                            echo '<h5 class="bg-danger text-center">Las reservas están completas en esta fecha y zona horaria. ¡Inténtelo de nuevo!</h5>';
+                        }
+                    }
+                    if (isset($_GET['reservation'])) {
+                        if ($_GET['reservation'] == "success") {
+                            echo '<h5 class="bg-success text-center">¡Tu reserva fue creada exitosamente!</h5>';
+                        }
+                    }
+                    echo '<br>';
+
+                    //formulario de reserva 
+                    echo '  
         
     <div class="signup-form">
         <form action="includes/reservation.inc.php" method="post">
@@ -100,30 +97,31 @@ if(isset($_SESSION['user_id'])){
         </form>
         <br><br>
     </div>
-    ';  
-    }
+    ';
+                } else {
+                    echo '	<p class="text-center text-danger"><br>¡No has iniciado sesión!<br></p>
+                    <p class="text-center">¡Para hacer una reserva tienes que crear una cuenta!<br><br></p>
+                    <div style="display: flex; justify-content: center; align-items: center; padding-bottom: 20px;">
+                    <img src="./img/wk.webp" alt="Walok" style="align-items:center;"> 
+                    </div>';
+                }
+                ?>
 
-    else {
-        echo '	<p class="text-center text-danger"><br>¡No has iniciado sesión!<br></p>
-       <p class="text-center">¡Para hacer una reserva tienes que crear una cuenta!<br><br><p>;
-       <div style="display: flex; justify-content: center; align-items: center; padding-bottom: 20px; ">
-       <img src="./img/wk.webp" alt="Walok" style="align-items:center;"> 
-       </div>';
-    }
-    ?>
 
-             
+            </div>
         </div>
     </div>
-</div>
-<?php require "walokbot.php"; ?>
+    
+    <?php require "walokbot.php"; ?>
     <footer class="footer">
         <div class="g1">
             <div class="box">
                 <h2>Síguenos</h2>
                 <div class="social">
-                    <a href="https://www.facebook.com/WalokMiraflores" target="_blank" class="fa-brands fa-facebook"></a>
-                    <a href="https://www.instagram.com/restauranteorientalwalok/" target="_blank" class="fa-brands fa-instagram"></a>
+                    <a href="https://www.facebook.com/WalokMiraflores" target="_blank"
+                        class="fa-brands fa-facebook"></a>
+                    <a href="https://www.instagram.com/restauranteorientalwalok/" target="_blank"
+                        class="fa-brands fa-instagram"></a>
                     <a href="#" class="fa-brands fa-whatsapp"></a>
                 </div>
             </div>
@@ -143,9 +141,7 @@ if(isset($_SESSION['user_id'])){
         <div class="g2">
             <small>&copy; 2023 <b>Wa Lok</b> - Todos los derechos reservados.</small>
         </div>
-        <button class="chatbot-toggler">
-        <span class="material-symbols-rounded">mode_comment</span>
-        <span class="material-symbols-outlined">close</span> 
     </footer>
 </body>
+
 </html>
