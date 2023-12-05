@@ -71,6 +71,7 @@
 
         </div>
     </div>
+    <?php require "walokbot.php"; ?>
     <footer class="footer">
         <div class="g1">
             <div class="box">

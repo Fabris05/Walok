@@ -87,6 +87,7 @@
             <p>Wa Lok - Salón Familiar</p>
         </div>
     </div>
+    <?php require "walokbot.php"; ?>
     <footer class="footer">
         <div class="g1">
             <div class="box">
